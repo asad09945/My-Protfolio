@@ -23,33 +23,39 @@ function App() {
         </div>
       </section>
 
-      {/* Projects Section */}
+    
+ {/* Projects Section */}
       <section className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center mb-12">Featured Models</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Bid Price Prediction */}
-          <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-        <div className="flex items-center mb-4">
-          <BarChart3 className="w-8 h-8 text-blue-600 mr-3" />
-          <h3 className="text-xl font-semibold">Bid Price Prediction</h3>
-        </div>
-        <p className="text-gray-600 mb-4">
-          Advanced machine learning model to predict optimal bid prices using historical data and market trends.
-        </p>
-        <div className="flex space-x-4">
-          <a
-        href="https://github.com/asad09945/Click-Ad-Project-/blob/main/RealTimeBidding-ML/notebooks/BiddingModel.ipynb"
-        className="flex items-center text-blue-600 hover:text-blue-800"
-        target="_blank"
-        rel="noopener noreferrer"
-          >
-        <Github className="w-5 h-5 mr-1" /> Code
-          </a>
-          <a href="#" className="flex items-center text-blue-600 hover:text-blue-800">
-        <ExternalLink className="w-5 h-5 mr-1" /> Demo
-          </a>
-        </div>
+        {/* Bid Price Prediction */}
+        <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+          <div className="flex items-center mb-4">
+        <BarChart3 className="w-8 h-8 text-blue-600 mr-3" />
+        <h3 className="text-xl font-semibold">Bid Price Prediction</h3>
           </div>
+          <p className="text-gray-600 mb-4">
+        Advanced machine learning model to predict optimal bid prices using historical data and market trends.
+          </p>
+          <div className="flex space-x-4">
+        <a
+          href="https://github.com/asad09945/Click-Ad-Project-/blob/main/RealTimeBidding-ML/notebooks/BiddingModel.ipynb"
+          className="flex items-center text-blue-600 hover:text-blue-800"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Github className="w-5 h-5 mr-1" /> Code
+        </a>
+        <a
+          href="https://github.com/asad09945/Click-Ad-Project-/raw/refs/heads/main/RealTimeBidding-ML/models/Bid%20Prediction%20Model.pkl"
+          className="flex items-center text-blue-600 hover:text-blue-800"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ExternalLink className="w-5 h-5 mr-1" /> Download Model
+        </a>
+          </div>
+        </div>
 
         {/* Bid Win Prediction */}
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
@@ -69,34 +75,44 @@ function App() {
           >
           <Github className="w-5 h-5 mr-1" /> Code
           </a>
-          <a href="#" className="flex items-center text-purple-600 hover:text-purple-800">
-          <ExternalLink className="w-5 h-5 mr-1" /> Demo
+          <a
+          href="https://github.com/asad09945/Click-Ad-Project-/raw/refs/heads/main/RealTimeBidding-ML/models/BidWinModel.pkl"
+          className="flex items-center text-purple-600 hover:text-purple-800"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          <ExternalLink className="w-5 h-5 mr-1" /> Download Model
           </a>
         </div>
         </div>
-          {/* Rank Based Score */}
-          <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
-          <div className="flex items-center mb-4">
-            <TrendingUp className="w-8 h-8 text-green-600 mr-3" />
-            <h3 className="text-xl font-semibold">Rank Based Score</h3>
-          </div>
-          <p className="text-gray-600 mb-4">
-            Innovative ranking algorithm that combines multiple metrics to generate accurate performance scores.
-          </p>
-          <div className="flex space-x-4">
-            <a
-            href="https://github.com/asad09945/Click-Ad-Project-/blob/main/RealTimeBidding-ML/notebooks/RankBasedAuctionScore.ipynb"
-            className="flex items-center text-green-600 hover:text-green-800"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            <Github className="w-5 h-5 mr-1" /> Code
-            </a>
-            <a href="#" className="flex items-center text-green-600 hover:text-green-800">
-            <ExternalLink className="w-5 h-5 mr-1" /> Demo
-            </a>
-          </div>
-          </div>
+        {/* Rank Based Score */}
+        <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+        <div className="flex items-center mb-4">
+        <TrendingUp className="w-8 h-8 text-green-600 mr-3" />
+        <h3 className="text-xl font-semibold">Rank Based Score</h3>
+        </div>
+        <p className="text-gray-600 mb-4">
+        Innovative ranking algorithm that combines multiple metrics to generate accurate performance scores.
+        </p>
+        <div className="flex space-x-4">
+        <a
+        href="https://github.com/asad09945/Click-Ad-Project-/blob/main/RealTimeBidding-ML/notebooks/RankBasedAuctionScore.ipynb"
+        className="flex items-center text-green-600 hover:text-green-800"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        <Github className="w-5 h-5 mr-1" /> Code
+        </a>
+        <a
+        href="https://github.com/asad09945/Click-Ad-Project-/raw/refs/heads/main/RealTimeBidding-ML/models/Rank%20Based%20Score.pkl"
+        className="flex items-center text-green-600 hover:text-green-800"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        <ExternalLink className="w-5 h-5 mr-1" /> Download Model
+        </a>
+        </div>
+        </div>
 
           {/* Click Through Rate */}
           <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
@@ -109,15 +125,20 @@ function App() {
         </p>
         <div className="flex space-x-4">
           <a
-            href="https://github.com/asad09945/Click-Ad-Project-/blob/main/RealTimeBidding-ML/notebooks/CTR(ClickThroughRate)Prediction.ipynb"
-            className="flex items-center text-red-600 hover:text-red-800"
-            target="_blank"
-            rel="noopener noreferrer"
+        href="https://github.com/asad09945/Click-Ad-Project-/blob/main/RealTimeBidding-ML/notebooks/CTR(ClickThroughRate)Prediction.ipynb"
+        className="flex items-center text-red-600 hover:text-red-800"
+        target="_blank"
+        rel="noopener noreferrer"
           >
-            <Github className="w-5 h-5 mr-1" /> Code
+        <Github className="w-5 h-5 mr-1" /> Code
           </a>
-          <a href="#" className="flex items-center text-red-600 hover:text-red-800">
-            <ExternalLink className="w-5 h-5 mr-1" /> Demo
+          <a
+        href="https://github.com/asad09945/Click-Ad-Project-/raw/refs/heads/main/RealTimeBidding-ML/models/CTR_Model.pkl"
+        className="flex items-center text-red-600 hover:text-red-800"
+        target="_blank"
+        rel="noopener noreferrer"
+          >
+        <ExternalLink className="w-5 h-5 mr-1" /> Download Model
           </a>
         </div>
           </div>

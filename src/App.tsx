@@ -8,7 +8,7 @@ function App() {
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="mb-8">
           <img
-            src="mypic.png"
+            src="/mypic.png"
             alt="Profile"
             className="rounded-full w-48 h-48 mx-auto mb-6 object-cover shadow-lg"
           />

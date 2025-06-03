@@ -24,9 +24,9 @@ function App() {
       </section>
 
     
- {/* Projects Section */}
+ {/* Projects Section 1 */}
       <section className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center mb-12">Featured Models</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">Machine Learning Models</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         {/* Bid Price Prediction */}
         <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
@@ -144,6 +144,126 @@ function App() {
           </div>
         </div>
       </section>
+      {/* Projects Section 2 */}
+      <section className="container mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold text-center mb-12">Deep Learning Models</h2>
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {/* Number Recognition */}
+        <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+          <div className="flex items-center mb-4">
+        <BarChart3 className="w-8 h-8 text-blue-600 mr-3" />
+        <h3 className="text-xl font-semibold">Number Recognition</h3>
+          </div>
+          <p className="text-gray-600 mb-4">
+        Created a CNN model using Conv2D and Maxpool2D Layers to efficiently recognize hand written numbers.
+          </p>
+          <div className="flex space-x-4">
+        <a
+          href="https://github.com/asad09945/DeepLearning/blob/main/NumberRecognition.ipynb"
+          className="flex items-center text-blue-600 hover:text-blue-800"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Github className="w-5 h-5 mr-1" /> Code
+        </a>
+        <a
+          href=""
+          className="flex items-center text-blue-600 hover:text-blue-800"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ExternalLink className="w-5 h-5 mr-1" /> Download Model
+        </a>
+          </div>
+        </div>
+
+        {/* Face Recognition */}
+        <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+        <div className="flex items-center mb-4">
+          <Brain className="w-8 h-8 text-purple-600 mr-3" />
+          <h3 className="text-xl font-semibold">Face Recognition Model</h3>
+        </div>
+        <p className="text-gray-600 mb-4">
+        Created Variational Autoencoder and Deep Bayesian Variational Autoencoder DB-VAE models to effectively recogize facial features.
+        </p>
+        <div className="flex space-x-4">
+          <a
+          href="https://github.com/asad09945/DeepLearning/blob/main/FacialRecognition.ipynb"
+          className="flex items-center text-purple-600 hover:text-purple-800"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          <Github className="w-5 h-5 mr-1" /> Code
+          </a>
+          <a
+          href=""
+          className="flex items-center text-purple-600 hover:text-purple-800"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          <ExternalLink className="w-5 h-5 mr-1" /> Download Model
+          </a>
+        </div>
+        </div>
+        {/* Self Driving Car */}
+        <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+        <div className="flex items-center mb-4">
+        <TrendingUp className="w-8 h-8 text-green-600 mr-3" />
+        <h3 className="text-xl font-semibold">Self Driving Car Model</h3>
+        </div>
+        <p className="text-gray-600 mb-4">
+        Under Progress...... Stay tuned!
+        </p>
+        <div className="flex space-x-4">
+        <a
+        href=""
+        className="flex items-center text-green-600 hover:text-green-800"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        <Github className="w-5 h-5 mr-1" /> Code
+        </a>
+        <a
+        href=""
+        className="flex items-center text-green-600 hover:text-green-800"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        <ExternalLink className="w-5 h-5 mr-1" /> Download Model
+        </a>
+        </div>
+        </div>
+
+          {/* Music Generation */}
+          <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+        <div className="flex items-center mb-4">
+          <MousePointerClick className="w-8 h-8 text-red-600 mr-3" />
+          <h3 className="text-xl font-semibold">Music Generation Model</h3>
+        </div>
+        <p className="text-gray-600 mb-4">
+          Used RNNs to create a sequrntial LTSM model that takes music notes in ABCD format and predict next notes to generate music 
+        </p>
+        <div className="flex space-x-4">
+          <a
+        href="https://github.com/asad09945/DeepLearning/blob/main/MusicGeneration.ipynb"
+        className="flex items-center text-red-600 hover:text-red-800"
+        target="_blank"
+        rel="noopener noreferrer"
+          >
+        <Github className="w-5 h-5 mr-1" /> Code
+          </a>
+          <a
+        href=""
+        className="flex items-center text-red-600 hover:text-red-800"
+        target="_blank"
+        rel="noopener noreferrer"
+          >
+        <ExternalLink className="w-5 h-5 mr-1" /> Download Model
+          </a>
+        </div>
+          </div>
+        </div>
+      </section>
 
       {/* Skills Section */}
       <section className="container mx-auto px-4 py-16 bg-white">
@@ -166,6 +286,7 @@ function App() {
           ))}
         </div>
       </section>
+
 
       {/* Links Section */}
       <section className="container mx-auto px-4 py-16 text-center">
